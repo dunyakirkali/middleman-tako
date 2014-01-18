@@ -1,6 +1,5 @@
 require 'middleman-core'
 
-require 'middleman-tako/version'
 require 'middleman-tako/template'
 
 Middleman::Templates.register :tako, Middleman::Tako::Template
