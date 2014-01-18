@@ -29,7 +29,12 @@ Gem::Specification.new do |s|
     "features/support/env.rb",
     "lib/middleman-tako.rb",
     "lib/middleman-tako/template.rb",
-    "lib/middleman-tako/version.rb",
+    "lib/middleman-tako/template/shared/Gemfile.tt",
+    "lib/middleman-tako/template/shared/config.tt",
+    "lib/middleman-tako/template/source/index.slim",
+    "lib/middleman-tako/template/source/layouts/application.slim",
+    "lib/middleman_extebsion.rb",
+    "middleman-tako.gemspec",
     "test/helper.rb",
     "test/test_middleman-tako.rb"
   ]
@@ -43,9 +48,9 @@ Gem::Specification.new do |s|
     s.specification_version = 4
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<middleman>, [">= 0"])
-      s.add_runtime_dependency(%q<slim>, [">= 0"])
-      s.add_runtime_dependency(%q<redcarpet>, [">= 0"])
+      s.add_runtime_dependency(%q<middleman>, ["~> 3.2"])
+      s.add_runtime_dependency(%q<slim>, ["~> 2.0"])
+      s.add_runtime_dependency(%q<redcarpet>, ["~> 3.0"])
       s.add_development_dependency(%q<shoulda>, [">= 0"])
       s.add_development_dependency(%q<rdoc>, ["~> 3.12"])
       s.add_development_dependency(%q<cucumber>, [">= 0"])
@@ -54,9 +59,9 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<jeweler>, ["~> 2.0.0"])
       s.add_development_dependency(%q<simplecov>, [">= 0"])
     else
-      s.add_dependency(%q<middleman>, [">= 0"])
-      s.add_dependency(%q<slim>, [">= 0"])
-      s.add_dependency(%q<redcarpet>, [">= 0"])
+      s.add_dependency(%q<middleman>, ["~> 3.2"])
+      s.add_dependency(%q<slim>, ["~> 2.0"])
+      s.add_dependency(%q<redcarpet>, ["~> 3.0"])
       s.add_dependency(%q<shoulda>, [">= 0"])
       s.add_dependency(%q<rdoc>, ["~> 3.12"])
       s.add_dependency(%q<cucumber>, [">= 0"])
@@ -66,9 +71,9 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<simplecov>, [">= 0"])
     end
   else
-    s.add_dependency(%q<middleman>, [">= 0"])
-    s.add_dependency(%q<slim>, [">= 0"])
-    s.add_dependency(%q<redcarpet>, [">= 0"])
+    s.add_dependency(%q<middleman>, ["~> 3.2"])
+    s.add_dependency(%q<slim>, ["~> 2.0"])
+    s.add_dependency(%q<redcarpet>, ["~> 3.0"])
     s.add_dependency(%q<shoulda>, [">= 0"])
     s.add_dependency(%q<rdoc>, ["~> 3.12"])
     s.add_dependency(%q<cucumber>, [">= 0"])
