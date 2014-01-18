@@ -19,6 +19,7 @@ module Middleman
       end
     
       def build_scaffold!
+        puts 'build_scaffold'
         template 'shared/Gemfile.tt', File.join(location, 'Gemfile')
         template 'shared/config.tt', File.join(location, 'config.rb')
         copy_file 'source/index.slim', File.join(location, 'source/index.slim')
