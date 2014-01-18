@@ -17,20 +17,20 @@ Jeweler::Tasks.new do |gem|
   gem.name = "middleman-tako"
   gem.homepage = "http://github.com/dunyakirkali/middleman-tako"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Tako's middleman template}
+  gem.description = %Q{Tako's middleman template: Slim, Redcarpet, html5, ...}
   gem.email = "dunyakirkali@gmail.com"
   gem.authors = ["Dunya Kirkali"]
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
 
-# require 'rake/testtask'
-# Rake::TestTask.new(:test) do |test|
-#   test.libs << 'lib' << 'test'
-#   test.pattern = 'test/**/test_*.rb'
-#   test.verbose = true
-# end
+require 'rake/testtask'
+Rake::TestTask.new(:test) do |test|
+  test.libs << 'lib' << 'test'
+  test.pattern = 'test/**/test_*.rb'
+  test.verbose = true
+end
 
 # require 'rcov/rcovtask'
 # Rcov::RcovTask.new do |test|
@@ -39,6 +39,9 @@ Jeweler::RubygemsDotOrgTasks.new
 #   test.verbose = true
 #   test.rcov_opts << '--exclude "gems/*"'
 # end
+
+require 'cucumber/rake/task'
+Cucumber::Rake::Task.new(:features)
 
 task :default => :test
 

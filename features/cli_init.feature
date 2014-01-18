@@ -1,7 +1,7 @@
-Feature: Middleman-Slim CLI
+Feature: Middleman-Tako CLI
 
   Scenario: Create a new project
-    Given I run `middleman init MY_PROJECT --template slim`
+    Given I run `middleman init MY_PROJECT --template tako`
     Then the exit status should be 0
     When I cd to "MY_PROJECT"
     Then the following files should exist:

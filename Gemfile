@@ -1,12 +1,15 @@
 source "http://rubygems.org"
 
-gem "middleman"
+gem 'middleman'
+gem 'slim'
+gem 'redcarpet'
 
 group :development do
-  gem "cucumber", "~> 1.3"
   gem "shoulda", ">= 0"
   gem "rdoc", "~> 3.12"
+  gem "cucumber", ">= 0"
+  gem 'aruba', ">= 0"
   gem "bundler", "~> 1.0"
   gem "jeweler", "~> 2.0.0"
-  gem "simplecov"
+  gem "simplecov", ">= 0"
 end
