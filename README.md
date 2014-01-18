@@ -1,19 +1,30 @@
-= middleman-tako
+# middleman-tako
 
-Description goes here.
+[![Gem Version](https://badge.fury.io/rb/middleman-tako.png)][gem]
+[![Build Status](https://travis-ci.org/dunyakirkali/middleman-tako.png)][travis]
 
-== Contributing to middleman-tako
+middleman-tako is an extension for the Middleman static site generator that adds support for Slim, RedCarpet, TODO.
+
+## Installation
+
+    gem install middleman 
+    gem install middleman-tako
+    middleman init PROJECT_NAME --template tako
+
+## Run 
  
-* Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
-* Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.
-* Fork the project.
-* Start a feature/bugfix branch.
-* Commit and push until you are happy with your contribution.
-* Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
-* Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
+    cd PROJECT_NAME
+    middleman server
 
-== Copyright
+## Learn more 
 
-Copyright (c) 2014 Dunya Kirkali. See LICENSE.txt for
-further details.
+- [Middleman](http://middlemanapp.com/)
+- [Slim](http://slim-lang.com/)
+- [Redcarpet]()
 
+## License 
+
+Released under the MIT License.
+
+[gem]: https://rubygems.org/gems/middleman-tako
+[travis]: http://travis-ci.org/dunyakirkali/middleman-tako
