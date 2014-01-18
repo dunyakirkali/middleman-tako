@@ -9,6 +9,8 @@ end
 
 $LOAD_PATH.unshift(File.dirname(__FILE__) + '/../../lib')
 require 'middleman-tako'
+require 'aruba/cucumber'
+require 'middleman-core/step_definitions'
 require 'test/unit/assertions'
 
 World(Test::Unit::Assertions)
