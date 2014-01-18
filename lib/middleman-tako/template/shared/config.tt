@@ -1,0 +1,33 @@
+require 'slim'
+
+# set :slim, :layout_engine => :slim
+
+set :site_title, "Site name"
+set :site_url, "http://www.domain.com"
+set :site_description, "Meta description."
+set :site_keywords, "keyword-one, keyword-two"
+
+set :css_dir, '<%= options[:css_dir] -%>'
+set :js_dir, '<%= options[:js_dir] -%>'
+set :images_dir, '<%= options[:images_dir] -%>'
+
+activate :livereload
+activate :directory_indexes
+
+# Build-specific configuration
+configure :build do
+  # For example, change the Compass output style for deployment
+  # activate :minify_css
+
+  # Minify Javascript on build
+  # activate :minify_javascript
+
+  # Enable cache buster
+  # activate :asset_hash
+
+  # Use relative URLs
+  activate :relative_assets
+
+  # Or use a different image path
+  # set :http_path, "/Content/images/"
+end
