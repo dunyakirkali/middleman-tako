@@ -1,8 +1,8 @@
 source "http://rubygems.org"
 
 gem 'middleman', "~> 3.2"
-gem 'slim'
-gem 'redcarpet'
+gem 'slim', "~> 2.0"
+gem 'redcarpet', "~> 3.0"
 
 group :development do
   gem "shoulda", ">= 0"

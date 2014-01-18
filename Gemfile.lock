@@ -163,7 +163,7 @@ DEPENDENCIES
   jeweler (~> 2.0.0)
   middleman (~> 3.2)
   rdoc (~> 3.12)
-  redcarpet
+  redcarpet (~> 3.0)
   shoulda
   simplecov
-  slim
+  slim (~> 2.0)
