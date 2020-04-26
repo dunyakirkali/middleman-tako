@@ -1,6 +1,6 @@
 source "http://rubygems.org"
 
-gem 'middleman', "~> 3.2"
+gem 'middleman-core', "~> 3.0"
 gem 'slim', "~> 2.0"
 gem 'redcarpet', "~> 3.0"
 
