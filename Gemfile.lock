@@ -23,7 +23,7 @@ GEM
     docile (1.1.2)
     faraday (0.9.0)
       multipart-post (>= 1.2, < 3)
-    ffi (1.9.3)
+    ffi (1.12.2)
     gherkin (2.12.2)
       multi_json (~> 1.3)
     git (1.2.6)
